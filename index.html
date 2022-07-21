@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENDING MACHINE</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;"><u>Vending Machine</u></h1>
+    <div class="container">
+        <div class="machine">
+            <div id="milk">
+                <span>Milk</span><br>
+                <span class="milk">800</span>
+            </div>
+
+            <div id="coff">
+                <span>Coffee powder</span><br>
+                <span class="coffee">500</span>
+            </div>
+
+            <div id="water">
+                <span>Water</span><br>
+                <span class="water">1500</span>
+            </div>
+
+            <div id="tea">
+                <span>Tea Leves</span><br>
+                <span class="tea">500</span>
+            </div>
+
+            <div id="sug">
+                <span>Sugar</span><br>
+                <span class="sug">500</span>
+            </div>
+
+
+            <div class="all">
+                <h2 id="total" style="position:relative;top: 20px;"></h2>
+            </div>
+            <div class="data">
+                <h2> select item: </h2>
+                <select class="select">
+                    <option id="strong-coffee">Strong coffee</option>
+                    <option id="light-coffee">Light coffee</option>
+                    <option id="strong-tea">Strong Tea</option>
+                    <option id="light-tea">Light Tea</option>
+                </select>
+                <br>
+                <input type="checkbox" id="sugar" name="sugar" onclick="check()" />
+                <label for="sugar">With sugar</label><br>
+                <lable for="que">Quentity:</lable>
+                <input type="number" id="que"><br>
+                <span id="quedata" style="color:white;"></span>
+            </div>
+        </div>
+
+        <button id="btn1" onclick="dispence()">Dispence</button>
+        <button onclick="clr()" style="margin-left: 9px;">Clear</button>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
